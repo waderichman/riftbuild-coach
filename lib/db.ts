@@ -1,11 +1,14 @@
-﻿const globalForDb = globalThis as unknown as { __rbPool?: { query: (text: string, params?: unknown[]) => Promise<{ rows: unknown[] }>; end?: () => Promise<void> } };
+﻿import pg from "pg";
 
-function createPool() {
+const { Pool } = pg;
+
+type DbPool = InstanceType<typeof Pool>;
+const globalForDb = globalThis as unknown as { __rbPool?: DbPool };
+
+function createPool(): DbPool | null {
   const connectionString = process.env.DATABASE_URL;
   if (!connectionString) return null;
 
-  const requireFn = eval("require");
-  const { Pool } = requireFn("pg");
   return new Pool({ connectionString, ssl: { rejectUnauthorized: false } });
 }
 
@@ -13,10 +16,10 @@ export function isDbEnabled(): boolean {
   return Boolean(process.env.DATABASE_URL);
 }
 
-export function getDbPool() {
+export function getDbPool(): DbPool | null {
   if (!isDbEnabled()) return null;
   if (!globalForDb.__rbPool) {
-    globalForDb.__rbPool = createPool() as typeof globalForDb.__rbPool;
+    globalForDb.__rbPool = createPool() as DbPool;
   }
   return globalForDb.__rbPool || null;
 }

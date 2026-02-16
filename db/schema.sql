@@ -1,4 +1,4 @@
-﻿-- Core aggregated recommendation table used by app reads
+-- Core aggregated recommendation table used by app reads
 CREATE TABLE IF NOT EXISTS recommendation_agg (
   id BIGSERIAL PRIMARY KEY,
   patch TEXT NOT NULL,

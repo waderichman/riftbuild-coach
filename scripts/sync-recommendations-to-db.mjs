@@ -1,14 +1,14 @@
 ﻿import fs from "node:fs/promises";
 import path from "node:path";
+import pg from "pg";
 
-const requireFn = eval("require");
+const { Pool } = pg;
 
 if (!process.env.DATABASE_URL_UNPOOLED && !process.env.DATABASE_URL) {
   throw new Error("Set DATABASE_URL_UNPOOLED or DATABASE_URL in your environment.");
 }
 
 const connectionString = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
-const { Pool } = requireFn("pg");
 const pool = new Pool({ connectionString, ssl: { rejectUnauthorized: false } });
 
 async function ensureSchema() {
