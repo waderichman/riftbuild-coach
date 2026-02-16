@@ -1,0 +1,1382 @@
+{
+  "version": "16.3.1",
+  "generatedAt": "2026-02-16T01:14:47.514Z",
+  "profiles": {
+    "Aatrox": {
+      "roleClass": "fighter",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Ahri": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Akali": {
+      "roleClass": "assassin",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Akshan": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Alistar": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Ambessa": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Amumu": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Anivia": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Annie": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Aphelios": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Ashe": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Aurelion Sol": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Aurora": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Azir": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Bard": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Bel'Veth": {
+      "roleClass": "fighter",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Blitzcrank": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Brand": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Braum": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Briar": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Caitlyn": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Camille": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Cassiopeia": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Cho'Gath": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Corki": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Darius": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Diana": {
+      "roleClass": "assassin",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Draven": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Dr. Mundo": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Ekko": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Elise": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Evelynn": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Ezreal": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Fiddlesticks": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Fiora": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Fizz": {
+      "roleClass": "assassin",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Galio": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Gangplank": {
+      "roleClass": "fighter",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Garen": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Gnar": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Gragas": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Graves": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Gwen": {
+      "roleClass": "fighter",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Hecarim": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Heimerdinger": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Hwei": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Illaoi": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Irelia": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Ivern": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Janna": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Jarvan IV": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Jax": {
+      "roleClass": "fighter",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Jayce": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Jhin": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Jinx": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kai'Sa": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kalista": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Karma": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Karthus": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kassadin": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Katarina": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kayle": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kayn": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Kennen": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kha'Zix": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kindred": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Kled": {
+      "roleClass": "fighter",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Kog'Maw": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "K'Sante": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "LeBlanc": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Lee Sin": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Leona": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Lillia": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Lissandra": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Lucian": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Lulu": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Lux": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Malphite": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Malzahar": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Maokai": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Master Yi": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Mel": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Milio": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Miss Fortune": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Wukong": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Mordekaiser": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Morgana": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Naafiri": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Nami": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Nasus": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Nautilus": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Neeko": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Nidalee": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Nilah": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Nocturne": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Nunu & Willump": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Olaf": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Orianna": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Ornn": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Pantheon": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Poppy": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Pyke": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Qiyana": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Quinn": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Rakan": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Rammus": {
+      "roleClass": "tank",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Rek'Sai": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Rell": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Renata Glasc": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Renekton": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Rengar": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Riven": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Rumble": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Ryze": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Samira": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Sejuani": {
+      "roleClass": "tank",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Senna": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Seraphine": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Sett": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Shaco": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Shen": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Shyvana": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Singed": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Sion": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Sivir": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Skarner": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Smolder": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Sona": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Soraka": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Swain": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Sylas": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Syndra": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Tahm Kench": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Taliyah": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Talon": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Taric": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Teemo": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Thresh": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Tristana": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Trundle": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Tryndamere": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Twisted Fate": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Twitch": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Udyr": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Urgot": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Varus": {
+      "roleClass": "marksman",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Vayne": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Veigar": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Vel'Koz": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Vex": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Vi": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Viego": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Viktor": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Vladimir": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Volibear": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Warwick": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Xayah": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Xerath": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Xin Zhao": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Yasuo": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Yone": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Yorick": {
+      "roleClass": "tank",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": true
+    },
+    "Yunara": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Yuumi": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": true,
+      "tanky": false
+    },
+    "Zaahen": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Zac": {
+      "roleClass": "tank",
+      "apThreat": true,
+      "adThreat": true,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": true
+    },
+    "Zed": {
+      "roleClass": "assassin",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Zeri": {
+      "roleClass": "marksman",
+      "apThreat": false,
+      "adThreat": true,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Ziggs": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": false,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Zilean": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Zoe": {
+      "roleClass": "mage",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    },
+    "Zyra": {
+      "roleClass": "support",
+      "apThreat": true,
+      "adThreat": false,
+      "heavyCc": true,
+      "heavyHealing": false,
+      "tanky": false
+    }
+  }
+}
