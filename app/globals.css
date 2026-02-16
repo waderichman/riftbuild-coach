@@ -53,6 +53,14 @@ a {
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.brand .brand-icon {
+  border-radius: 4px;
+  border: 1px solid var(--line);
 }
 
 .site-nav {
@@ -489,3 +497,16 @@ select {
 .notes {
   line-height: 1.4;
 }
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.footer-brand .brand-icon {
+  border-radius: 4px;
+  border: 1px solid var(--line);
+}
+
+
