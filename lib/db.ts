@@ -77,3 +77,28 @@ export async function releaseJobLock(jobName: string): Promise<void> {
     // ignore
   }
 }
+
+export async function getCronState(key: string, fallback = "0"): Promise<string> {
+  try {
+    const rows = await dbQuery<{ state_value: string }>("SELECT state_value FROM cron_state WHERE state_key = $1", [key]);
+    return rows[0]?.state_value ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+export async function setCronState(key: string, value: string): Promise<void> {
+  try {
+    await dbQuery(
+      `
+      INSERT INTO cron_state (state_key, state_value, updated_at)
+      VALUES ($1, $2, NOW())
+      ON CONFLICT (state_key)
+      DO UPDATE SET state_value = EXCLUDED.state_value, updated_at = NOW()
+      `,
+      [key, value]
+    );
+  } catch {
+    // ignore
+  }
+}

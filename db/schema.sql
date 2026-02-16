@@ -1,4 +1,4 @@
--- Core aggregated recommendation table used by app reads
+﻿-- Core aggregated recommendation table used by app reads
 CREATE TABLE IF NOT EXISTS recommendation_agg (
   id BIGSERIAL PRIMARY KEY,
   patch TEXT NOT NULL,
@@ -33,5 +33,12 @@ ON recommendation_agg (updated_at DESC);
 CREATE TABLE IF NOT EXISTS job_locks (
   job_name TEXT PRIMARY KEY,
   locked_until TIMESTAMPTZ NOT NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+-- Cursor/state storage for batched cron ingestion
+CREATE TABLE IF NOT EXISTS cron_state (
+  state_key TEXT PRIMARY KEY,
+  state_value TEXT NOT NULL,
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
