@@ -13,16 +13,16 @@
     "sync:db": "node --env-file=.env scripts/sync-recommendations-to-db.mjs"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "^15.5.12",
+    "pg": "8.13.1",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "pg": "8.13.1"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@types/node": "22.10.2",
+    "@types/pg": "8.11.10",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
-    "typescript": "5.7.2",
-    "@types/pg": "8.11.10"
+    "typescript": "5.7.2"
   }
 }
