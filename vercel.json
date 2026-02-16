@@ -1,4 +1,4 @@
-﻿{
+{
   "crons": [
     { "path": "/api/cron/ingest", "schedule": "0 */3 * * *" },
     { "path": "/api/cron/aggregate", "schedule": "20 2 * * *" }
