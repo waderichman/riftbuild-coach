@@ -1,10 +1,14 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { buildWhyLines } from "@/lib/buildExplain";
 import { buildCompKey } from "@/lib/compKey";
 import { acquireJobLock, dbQuery, getCronState, releaseJobLock, setCronState } from "@/lib/db";
 import { championProfiles } from "@/lib/lol";
-import { fetchMatch, fetchMatchIdsByPuuid, parsePatch } from "@/lib/riotClient";
+import { fetchMatch, fetchMatchIdsByPuuid, parsePatch, type RiotRegion } from "@/lib/riotClient";
 import type { EnemyFeatureSnapshot } from "@/lib/types";
+
+type SeedTarget = { puuid: string; region: RiotRegion };
+
+const VALID_REGIONS = new Set<RiotRegion>(["americas", "europe", "asia"]);
 
 function isAuthorized(request: Request): boolean {
   const secret = process.env.CRON_SECRET;
@@ -40,6 +44,21 @@ function deriveFeatures(enemyChampions: string[]): EnemyFeatureSnapshot {
 
 function toFeatureBucket(f: EnemyFeatureSnapshot): string {
   return `ap${f.ap}-ad${f.ad}-cc${f.cc}-heal${f.healing}-tank${f.tanks}`;
+}
+
+function parseSeedTarget(raw: string, defaultRegion: RiotRegion): SeedTarget | null {
+  const value = String(raw || "").trim();
+  if (!value) return null;
+
+  const regionPrefixMatch = value.match(/^(americas|europe|asia)[:|](.+)$/i);
+  if (regionPrefixMatch) {
+    const region = regionPrefixMatch[1].toLowerCase() as RiotRegion;
+    const puuid = regionPrefixMatch[2].trim();
+    if (!puuid) return null;
+    return { puuid, region };
+  }
+
+  return { puuid: value, region: defaultRegion };
 }
 
 async function loadDDragonMaps() {
@@ -97,25 +116,28 @@ export async function GET(request: Request): Promise<NextResponse> {
   }
 
   try {
+    const defaultRegion = (process.env.RIOT_REGION || "americas").toLowerCase() as RiotRegion;
+    const region = VALID_REGIONS.has(defaultRegion) ? defaultRegion : "americas";
+    const queueRaw = Number(process.env.RIOT_QUEUE || 420);
+    const queue = Number.isFinite(queueRaw) && queueRaw > 0 ? queueRaw : undefined;
+    const allowQueueFallback = String(process.env.RIOT_CRON_ALLOW_QUEUE_FALLBACK || "true").toLowerCase() !== "false";
+    const seedsPerRun = Number(process.env.RIOT_CRON_SEEDS_PER_RUN || 16);
+    const matchesPerSeed = Number(process.env.RIOT_CRON_MATCHES_PER_SEED || 12);
+    const minGames = Number(process.env.RIOT_MIN_GAMES || 2);
+
     const seeds = String(process.env.RIOT_SEED_PUUIDS || "")
       .split(",")
-      .map((s) => s.trim())
-      .filter(Boolean);
+      .map((s) => parseSeedTarget(s, region))
+      .filter((s): s is SeedTarget => Boolean(s));
 
     if (seeds.length === 0) {
       return NextResponse.json({ ok: true, skipped: true, reason: "RIOT_SEED_PUUIDS is empty" });
     }
 
-    const region = (process.env.RIOT_REGION || "americas") as "americas" | "asia" | "europe";
-    const queue = Number(process.env.RIOT_QUEUE || 420);
-    const seedsPerRun = Number(process.env.RIOT_CRON_SEEDS_PER_RUN || 8);
-    const matchesPerSeed = Number(process.env.RIOT_CRON_MATCHES_PER_SEED || 4);
-    const minGames = Number(process.env.RIOT_MIN_GAMES || 2);
-
     const cursorRaw = await getCronState("riot_seed_cursor", "0");
     const cursor = Number(cursorRaw) || 0;
 
-    const selectedSeeds: string[] = [];
+    const selectedSeeds: SeedTarget[] = [];
     for (let i = 0; i < Math.min(seedsPerRun, seeds.length); i += 1) {
       selectedSeeds.push(seeds[(cursor + i) % seeds.length]);
     }
@@ -138,12 +160,28 @@ export async function GET(request: Request): Promise<NextResponse> {
     }>();
 
     let processedMatches = 0;
+    let seedsWithoutMatches = 0;
+    let queueFallbackHits = 0;
 
-    for (const puuid of selectedSeeds) {
-      const matchIds = await fetchMatchIdsByPuuid(puuid, region, matchesPerSeed, queue).catch(() => [] as string[]);
+    for (const seed of selectedSeeds) {
+      let matchIds = await fetchMatchIdsByPuuid(seed.puuid, seed.region, matchesPerSeed, queue).catch(() => [] as string[]);
 
-      for (const matchId of matchIds) {
-        const match = await fetchMatch(matchId, region).catch(() => null);
+      if (matchIds.length === 0 && allowQueueFallback && typeof queue === "number") {
+        const fallbackIds = await fetchMatchIdsByPuuid(seed.puuid, seed.region, matchesPerSeed).catch(() => [] as string[]);
+        if (fallbackIds.length > 0) {
+          queueFallbackHits += 1;
+          matchIds = fallbackIds;
+        }
+      }
+
+      const uniqueMatchIds = [...new Set(matchIds)];
+      if (uniqueMatchIds.length === 0) {
+        seedsWithoutMatches += 1;
+        continue;
+      }
+
+      for (const matchId of uniqueMatchIds) {
+        const match = await fetchMatch(matchId, seed.region).catch(() => null);
         if (!match) continue;
         processedMatches += 1;
 
@@ -265,7 +303,11 @@ export async function GET(request: Request): Promise<NextResponse> {
       processedSeeds: selectedSeeds.length,
       processedMatches,
       upserted,
-      nextCursor: (cursor + selectedSeeds.length) % seeds.length
+      seedsWithoutMatches,
+      queueFallbackHits,
+      nextCursor: (cursor + selectedSeeds.length) % seeds.length,
+      queue: queue ?? null,
+      fallbackEnabled: allowQueueFallback
     });
   } finally {
     await releaseJobLock(lockName);

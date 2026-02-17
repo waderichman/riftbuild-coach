@@ -64,9 +64,16 @@ export async function fetchMatchIdsByPuuid(
   puuid: string,
   region: RiotRegion,
   count = 20,
-  queue = 420
+  queue?: number
 ): Promise<string[]> {
-  const url = `${RIOT_API_BASE}/lol/match/v5/matches/by-puuid/${encodeURIComponent(puuid)}/ids?start=0&count=${count}&queue=${queue}`;
+  const params = new URLSearchParams({
+    start: "0",
+    count: String(count)
+  });
+  if (typeof queue === "number" && Number.isFinite(queue) && queue > 0) {
+    params.set("queue", String(queue));
+  }
+  const url = `${RIOT_API_BASE}/lol/match/v5/matches/by-puuid/${encodeURIComponent(puuid)}/ids?${params.toString()}`;
   return riotFetch<string[]>(url.replace("api.riotgames.com", `${region}.api.riotgames.com`));
 }
 
