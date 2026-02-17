@@ -1,4 +1,3 @@
-```markdown
 # RiftBuild Coach
 
 Statistical League of Legends build recommendations based on ingested Riot match data.
@@ -219,7 +218,5 @@ from recommendation_agg;
 ## Disclaimer
 
 RiftBuild Coach is an independent project and is not endorsed by Riot Games.  
-Follow Riot API terms and developer policies for data usage and product behavior.
-```
+Follow Riot API terms and developer policies for data usage and product behavior
 
-If you want, I can also tailor this into a shorter “public GitHub README” plus a separate `docs/OPERATIONS.md` for your cron/DB runbook.
